@@ -1,0 +1,19 @@
+<%- include ('../../partials/header.ejs') %>
+
+<div  class="container">
+    <hr>
+    <div class="card  mt-4"> <!--mt é margin top. no Bootstrap só vai até 5-->
+        <div class="card-header">
+            <h2>Login de admin</h2>
+        </div><!--card-header-->
+        <div class="card-body">
+            <form action="/authenticate" method="POST">
+                <input class="form-control" type="email" name="email" placeholder="email@exemplo.com"><br>
+                <input class="form-control" type="password" name="password" placeholder="********"><br>
+                <button type="submit" class="btn btn-success  col-12">Logar</button>
+            </form>
+        </div><!--card-body-->
+    </div><!--card-->
+</div> <!--container-->
+
+<%- include ('../../partials/footer.ejs') %>
